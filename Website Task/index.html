@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 105px;
+            background-color: black;
+            color:rgb(255, 174, 0);
+            /* width: 1200px; */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar {
+            /* border: 2px solid blue; */
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+        }
+
+        main {
+            background-image: url(./Background.png);
+            background-size: cover;
+            background-position: center;
+
+            /* border: 2px solid red; */
+
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        article {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            /* border: 2px solid yellow; */
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .text {
+            /* border: 2px solid blue; */
+            text-align: center;
+            padding: 0px 10px;
+            /* 0 for top and bottom 10 for right and left */
+            color: white;
+            z-index: 1;
+            font-size: 26px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        main p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        .order {
+            padding: 15px 35px;
+            font-size: 18px;
+            border: none;
+            color: white;
+            background-color: rgb(255, 174, 0);
+            border-radius: 5px;
+        }
+
+        section {
+            /* border: 2px solid yellow; */
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            text-align: center;
+            padding: 50px 100px;
+
+        }
+
+        img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card {
+            /* border: 2px solid rgb(255, 255, 255); */
+            padding-bottom: 20px;
+            box-shadow: 0px 0px 10px rgb(94, 94, 94);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        h4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        button {
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: green;
+            border-radius: 3px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media(max-width:600px) {
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .card {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h3>FoodHub</h3>
+        <div class="navbar">
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <article></article>
+        <div class="text">
+            <h2>Fresh Food Delivered To Your Door</h2>
+            <p>Order delicious meals from your favorite restaurants</p>
+            <button class="order">Order Now</button>
+        </div>
+    </main>
+
+    <section>
+        <div class="card">
+            <img src="./Burger.png" alt="">
+            <aside>
+                <h4>Burger</h4>
+                <p>$3.88</p>
+                <button>Buy Now</button>
+            </aside>
+        </div>
+
+        <div class="card">
+            <img src="./Pizza.png" alt="">
+            <aside>
+                <h4>Pizza</h4>
+                <p>$5.28</p>
+                <button>Buy Now</button>
+            </aside>
+        </div>
+
+        <div class="card">
+            <img src="./Pasta.png" alt="">
+            <aside>
+                <h4>Pasta</h4>
+                <p>$4.08</p>
+                <button>Buy Now</button>
+            </aside>
+        </div>
+
+        <div class="card">
+            <img src="./Sandwich.png" alt="">
+            <aside>
+                <h4>Sandwich</h4>
+                <p>$7.58</p>
+                <button>Buy Now</button>
+            </aside>
+        </div>
+
+    </section>
+    <footer>
+        <p> &copy; 2026 FoodHub</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    nav{
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 30px;
+        background-color: black;
+        color: white;
+    }
+    nav a{
+        color: white;
+    }
+    /* h2{ 
+        border: 2px solid blue;
+    } */
+    div{
+        /* border: 2px solid goldenrod; */
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    /* mobile <= 600 */
+    /* tablet <= 900 */
+    /* laptop <= 1200 */
+
+    @media(max-width:600px) {  /* Here using mobile max-width */
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Food Hub</h2>
+
+        <div>
+            <a href="">Home</a>
+            <a href="">Items</a>
+            <a href="">Order Now</a>
+            <a href="">Contact</a>
+        </div>
+    </nav>
+</body>
+</html>

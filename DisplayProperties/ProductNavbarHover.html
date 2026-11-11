@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        nav {
+            border: 1px solid;
+            padding: 20px;
+            background-color: rgb(38, 38, 38);
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown {
+            border: 1px solid rgb(149, 149, 149);
+            background-color: #eee;
+            /* width: 120px; */
+            display: none;
+            position: absolute;
+             top: 22px; /*for selecting laptops watches etc if top 23 we 
+                        can't select the products*/
+            left: 0;
+        }
+
+        .dropdown a {
+            display: block;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            padding: 6px 10px;
+            color: black;
+        }
+
+        .container:hover .dropdown {
+            display: block;
+        }
+
+        nav>a,  /*grouping selector */
+        .container>a {
+            color: white;
+            margin-right: 15px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav >
+        <a href="">Home</a>
+        <div class="container">
+            <a href="">Products</a>
+
+            <div class="dropdown">
+                <a href="">Laptops</a>
+                <a href="">Watches</a>
+                <a href="">Mobiles</a>
+                <a href="">Accessories</a>
+            </div>
+        </div>
+
+        <a href="">Offers</a>
+        <a href="">Contact</a>
+
+    </nav>
+
+</body>
+
+</html>

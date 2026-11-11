@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            border: 1px solid grey;
+            width: 200px;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 5px rgb(116, 116, 116);
+        }
+        .dropdown{
+            /* border: 2px solid red; */
+            width: 160px;
+            padding: 12px;
+            height: 120px;
+            margin: auto;
+            text-align: center;
+            display: none;
+            /* background-color: rgb(137, 137, 137); */
+        }
+        img{
+            width: 100%;
+            height: 120px;
+            display: block;
+        }
+
+        button{
+            border: none;
+            padding: 7px 16px;
+            background-color: darkorange;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .container:hover .dropdown{
+            display: block;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        span{
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./janaNayagan.png" alt="">
+        <div class="dropdown">
+            <p style="font-weight: bold;">Jana Nayagan</p>
+            <p><span> &star;&star;&star;&star;&star; </span> 10/10</p>
+            <button>Book Tickets</button>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            padding: 20px;
+            width: 300px;
+            /* text-align: center; */
+        }
+        .dropdown{
+            /* border: 2px solid green; */
+            width: 120px;
+            padding: 14px;
+            background-color: #eee;
+            display: none;
+        }
+        .dropdown a{ /* descendent selector */
+            display: block;
+            text-decoration: none;
+            color: black;
+            border-bottom: 1px solid;
+        }
+
+        .dropdown a:hover{
+            color: red;
+        }
+        .container:hover .dropdown{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button>Products</button>
+        <div class="dropdown">
+            <a href="">Laptop</a>
+            <a href="">Mobile</a>
+            <a href="">Watches</a>
+            <a href="">Shoes</a>
+        </div>
+    </div>
+</body>
+</html>

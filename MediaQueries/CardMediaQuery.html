@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            border: 2px solid red;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            border: 2px solid blue;
+            width: 250px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+        }
+
+        button {
+            padding: 10px 30px;
+            background-color: green;
+            color: white;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        @media(max-width:600px){
+            section{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <img src="./image.jpg" alt="">
+            <button>Visit</button>
+        </div>
+
+        <div class="card">
+            <img src="./image.jpg" alt="">
+            <button>Visit</button>
+
+        </div>
+        <div class="card">
+            <img src="./image.jpg" alt="">
+            <button>Visit</button>
+        </div>
+
+        <div class="card">
+            <img src="./image.jpg" alt="">
+            <button>Visit</button>
+        </div>
+
+        <div class="card">
+            <img src="./image.jpg" alt="">
+            <button>Visit</button>
+        </div>
+    </section>
+</body>
+
+</html>

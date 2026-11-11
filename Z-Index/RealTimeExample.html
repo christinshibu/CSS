@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            /* border: 2px solid grey; */
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: black;
+        }
+        nav>a{
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        section{
+            /* background image properties */
+            background-image: url(./Image.png);
+            background-size: cover;
+            background-position: center;
+
+            /* border: 2px solid red; */
+
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        div{
+            /* border: 2px solid blue; */
+            text-align: center;
+            padding: 0px 10px; /* 0 for top and bottom 10 for right and left */
+            color: white;
+            z-index: 1;
+            font-size: 26px; 
+        }
+        article{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            /* border: 2px solid yellow; */
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .container{
+            /* border: 2px solid lightblue; */
+            position: relative;
+        }
+        .dropdown{
+            /* border: 2px solid red; */
+            background-color: white;
+            display: none;
+            position: absolute;
+            top: 40px;
+            width: 200px;
+        }
+        .dropdown a{
+            display: block;
+            color: black;
+            padding: 7px;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+
+        .container:hover .dropdown{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">Home</a>
+        <div class="container">
+            <a href="">Courses</a>
+
+            <div class="dropdown">
+                <a href="">Java Full Stack</a>
+                <a href="">Python Full Stack</a>
+                <a href="">Testing</a>
+            </div>
+
+        </div>
+
+        <a href="">Placements</a>
+        <a href="">Contact</a>
+    </nav>
+
+    <section>
+        <article></article>  <!---- Just Using empty layer adding background color 
+                                    in between two layers -->
+        <div>
+            <h1>Welcome to Munnar</h1>
+            <p>Enjoy the Nature Diversity</p>
+        </div>
+    </section>
+</body>
+</html>

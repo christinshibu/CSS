@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav{
+            border: 2px solid grey;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+        }
+        .logo{
+            /* border: 2px solid red; */
+            padding: 0px 8px;
+        }
+
+        .content{
+            /* border: 2px solid blue; */
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 0 8px;
+
+        }
+        .content a{
+            color: white;
+            text-decoration: none;
+        }
+        .logo:hover{
+            cursor: pointer;
+        }
+
+        .content a:hover{
+            color: yellow;
+        }
+
+        section{
+            /* border: 2px solid black; */
+            height: 500px;
+            
+        }
+        section h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            /* width: 250px; */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+
+    <div class="logo">
+        <h2>JSPIDER'S</h2>
+    </div>
+
+    <div class="content">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Logout</a>
+    </div>
+
+    </nav>
+
+    <section>
+        <h2>Welocome To JSPIDER'S</h2>
+    </section>
+</body>
+</html>
